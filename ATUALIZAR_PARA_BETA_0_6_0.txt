@@ -1,0 +1,21 @@
+ALFRED EXECUTIVE INTELLIGENCE - ATUALIZACAO DESKTOP RC 0.6.1
+================================================================
+
+1. Feche completamente o ALFRED Desktop atual.
+2. Extraia este ZIP em uma pasta NOVA.
+3. Execute TESTAR_DESKTOP_WINDOWS.bat.
+4. Abra o modulo Alfred Bid para acessar o Pipeline de Licitacoes.
+
+SEUS DADOS SAO PRESERVADOS
+A base local continua em:
+%LOCALAPPDATA%\Anubis\ALFRED
+
+Nao apague essa pasta. Os editais existentes aparecerao automaticamente na etapa
+"Nova oportunidade" e poderao ser movimentados no pipeline.
+
+NOVO MODULO
+- Kanban com oito etapas
+- Prioridade e responsavel
+- Observacoes internas
+- Historico de movimentacoes
+- KPIs reais no Mission Control

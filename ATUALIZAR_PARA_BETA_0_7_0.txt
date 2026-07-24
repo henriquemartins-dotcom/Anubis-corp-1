@@ -1,0 +1,12 @@
+ALFRED EXECUTIVE INTELLIGENCE - ATUALIZACAO DESKTOP BETA 0.7.0
+
+1. Feche completamente o ALFRED.
+2. Extraia esta versao em uma pasta nova.
+3. Execute TESTAR_DESKTOP_WINDOWS.bat.
+4. Abra um edital e gere o Checklist IA.
+5. Na Base de Editais, selecione concorrencias e gere o relatorio PDF.
+6. Abra Monitoramento, configure a rotina e clique em Executar agora.
+7. Depois de gerar o executavel ou instalar o ALFRED, use AGENDAR_MONITORAMENTO_DIARIO_WINDOWS.bat para executar a rotina com a janela fechada.
+
+DADOS PRESERVADOS:
+%LOCALAPPDATA%\Anubis\ALFRED

@@ -1,0 +1,2 @@
+@echo off
+call "%~dp0CRIAR_INSTALADOR_OFICIAL_WINDOWS.bat"

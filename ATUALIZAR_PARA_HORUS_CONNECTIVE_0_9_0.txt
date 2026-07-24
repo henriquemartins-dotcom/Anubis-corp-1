@@ -1,0 +1,14 @@
+HÓRUS CONNECTIVE LICITAÇÕES - DESKTOP BETA 0.9.0
+
+1. Feche completamente a versão anterior do ALFRED/Hórus.
+2. Extraia este pacote em uma pasta nova.
+3. Execute TESTAR_DESKTOP_WINDOWS.bat para testar sem instalar.
+4. Para criar o instalador, execute CRIAR_INSTALADOR_OFICIAL_WINDOWS.bat.
+5. O sistema migra automaticamente os dados existentes de:
+   %LOCALAPPDATA%\Anubis\ALFRED
+   para:
+   %LOCALAPPDATA%\Anubis\HORUS_CONNECTIVE
+6. Em instalação nova, use inicialmente:
+   Usuário: henrique
+   Senha: horus123
+7. Em instalações migradas, a senha anterior é preservada.

@@ -1,0 +1,17 @@
+HORUS CONNECTIVE DESKTOP BETA 0.13.0
+
+Esta versão corrige a falha do PyInstaller ao executar collect_all("webview").
+
+COMO GERAR O INSTALADOR
+1. Extraia todo o ZIP para uma pasta nova e curta, por exemplo C:\Horus013.
+2. Execute CRIAR_INSTALADOR_OFICIAL_WINDOWS.bat.
+3. Aguarde os testes, a geração do executável e a criação do Setup.exe.
+4. O resultado ficará em installer-output.
+
+REQUISITOS
+- Windows 10 ou 11 x64
+- Python 3.12 x64
+- Internet na primeira compilação
+- Microsoft Edge WebView2 Runtime
+
+O Inno Setup será instalado pelo winget quando não estiver presente.

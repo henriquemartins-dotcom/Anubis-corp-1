@@ -1,0 +1,12 @@
+HORUS CONNECTIVE LICITACOES - DESKTOP BETA 0.11.0
+
+1. Feche completamente o Hórus Connective.
+2. Extraia este pacote em uma pasta nova.
+3. Execute CRIAR_INSTALADOR_OFICIAL_WINDOWS.bat.
+4. Instale o Setup gerado.
+5. Abra Usuários e permissões e informe o ID do Bitrix24 de cada responsável.
+6. Abra Notificações diárias, configure Bitrix24 e/ou SMTP e envie um teste.
+7. Execute AGENDAR_NOTIFICACOES_DIARIAS_WINDOWS.bat para permitir o envio com o sistema fechado.
+
+Os dados anteriores permanecem em:
+%LOCALAPPDATA%\Anubis\HORUS_CONNECTIVE

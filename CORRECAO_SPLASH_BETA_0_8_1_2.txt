@@ -1,0 +1,6 @@
+CORRECAO DA TELA DE ABERTURA
+
+A versão anterior bloqueava o script embutido por causa da política de segurança do sistema.
+Nesta versão o script é carregado externamente e há um encerramento automático independente.
+
+Gere o instalador usando CRIAR_INSTALADOR_OFICIAL_WINDOWS.bat.

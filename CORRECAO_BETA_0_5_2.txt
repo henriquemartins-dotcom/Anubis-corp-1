@@ -1,0 +1,28 @@
+ALFRED DESKTOP BETA 0.5.2 - HOTFIX WINDOWS
+
+ERRO CORRIGIDO
+Unable to configure formatter 'default'
+AttributeError: 'NoneType' object has no attribute 'isatty'
+
+CAUSA
+O executavel anterior foi compilado sem janela de console. Nesse modo, o Windows pode iniciar o programa sem sys.stdout e sys.stderr. O formatador padrao do Uvicorn tentou consultar sys.stderr.isatty() e encerrou o ALFRED antes de abrir a interface.
+
+COMO TESTAR SEM RECOMPILAR
+1. Extraia este pacote em uma pasta nova.
+2. Execute TESTAR_DESKTOP_WINDOWS.bat.
+3. Nao execute o ALFRED.exe antigo.
+
+COMO GERAR O NOVO EXECUTAVEL
+1. Execute GERAR_EXECUTAVEL_WINDOWS.bat.
+2. Aguarde os testes e a compilacao.
+3. O aplicativo sera criado em dist\ALFRED\ALFRED.exe.
+4. Se o Inno Setup 6 estiver instalado, o instalador sera criado em:
+   installer-output\ALFRED_Setup_0.5.2_Desktop_Beta.exe
+
+DADOS EXISTENTES
+Os dados continuam em:
+%LOCALAPPDATA%\Anubis\ALFRED
+A atualizacao nao apaga os editais, documentos ou configuracoes locais.
+
+LOG DE DIAGNOSTICO
+%LOCALAPPDATA%\Anubis\ALFRED\logs\alfred-desktop.log

@@ -1,0 +1,5 @@
+HÓRUS CONNECTIVE 0.9.2 - CORREÇÃO DE BUILD
+
+- Teste de senha padrão atualizado de alfred123 para horus123.
+- Fallback de senha do runtime atualizado para horus123.
+- Nenhuma alteração nos dados, interface ou funcionalidades.

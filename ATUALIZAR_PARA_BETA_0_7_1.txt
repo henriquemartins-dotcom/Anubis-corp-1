@@ -1,0 +1,9 @@
+ALFRED EXECUTIVE INTELLIGENCE - ATUALIZACAO DESKTOP BETA 0.7.1
+
+1. Feche completamente o ALFRED.
+2. Extraia esta versao em uma pasta nova.
+3. Execute TESTAR_DESKTOP_WINDOWS.bat.
+4. Abra o checklist de um edital e use BAIXAR CHECKLIST PDF.
+
+Os dados existentes permanecem em:
+%LOCALAPPDATA%\Anubis\ALFRED

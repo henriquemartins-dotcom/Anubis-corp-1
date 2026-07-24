@@ -1,0 +1,12 @@
+HÓRUS CONNECTIVE DESKTOP BETA 0.11.0
+
+VALIDAÇÕES EXECUTADAS
+- 77 testes automatizados aprovados
+- Compilação de módulos Python aprovada
+- Sintaxe JavaScript aprovada
+- Login administrativo e APIs em teste de fumaça aprovados
+- Banco SQLite local inicializado com novas tabelas
+- Endpoint de usuários responsáveis validado
+- Configuração de notificações validada
+- Scripts do Agendador de Tarefas incluídos
+- Integridade do pacote ZIP verificada

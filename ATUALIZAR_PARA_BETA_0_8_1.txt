@@ -1,0 +1,18 @@
+ALFRED EXECUTIVE INTELLIGENCE - ATUALIZACAO DESKTOP BETA 0.8.1
+
+1. Feche completamente o ALFRED atual.
+2. Extraia esta versão em uma pasta nova.
+3. Execute TESTAR_DESKTOP_WINDOWS.bat.
+4. Aguarde a tela de abertura.
+5. No primeiro acesso use:
+
+   Usuario: henrique
+   Senha: alfred123
+
+6. Abra Configuracoes e altere a senha.
+
+Os dados anteriores permanecem em:
+%LOCALAPPDATA%\Anubis\ALFRED
+
+Os relatorios ficam em:
+%LOCALAPPDATA%\Anubis\ALFRED\documents\reports
