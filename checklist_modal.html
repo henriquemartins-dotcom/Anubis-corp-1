@@ -1,0 +1,121 @@
+<section id="checklistModal" class="checklist-workspace hidden" aria-labelledby="checklistModalTitle">
+  <header class="checklist-workspace-header">
+    <button id="closeChecklistModal" class="checklist-back-button" type="button" aria-label="Voltar">← <span>Voltar</span></button>
+    <div class="checklist-workspace-heading">
+      <small>HÓRUS · CENTRO DE GERENCIAMENTO DA CONCORRÊNCIA</small>
+      <h2 id="checklistModalTitle">Checklist do edital</h2>
+      <p id="checklistModalSubtitle">Requisitos e providências identificados nos documentos.</p>
+    </div>
+    <div class="checklist-workspace-actions">
+      <button id="checklistDownloadButton" class="ghost" type="button">↓ Checklist PDF</button>
+      <button id="checklistPrintReportButton" class="ghost" type="button">Relatório executivo</button>
+      <button id="generateChecklistButton" class="primary" type="button">✦ Atualizar análise da IA</button>
+    </div>
+  </header>
+
+  <div class="checklist-competition-strip">
+    <div><small>Órgão</small><strong id="checklistOrganization">—</strong></div>
+    <div><small>Encerramento</small><strong id="checklistDeadline">—</strong></div>
+    <div><small>Responsável geral</small><strong id="checklistGeneralResponsible">Não definido</strong></div>
+    <div><small>Fonte</small><strong id="checklistSource">—</strong></div>
+  </div>
+
+  <nav class="checklist-workspace-tabs" aria-label="Seções da concorrência">
+    <button class="active" type="button" data-checklist-tab="checklist">Checklist</button>
+    <button type="button" data-checklist-tab="cronograma">Cronograma</button>
+    <button type="button" data-checklist-tab="documentos">Documentos</button>
+    <button type="button" data-checklist-tab="equipe">Equipe</button>
+    <button type="button" data-checklist-tab="historico">Histórico</button>
+  </nav>
+
+  <main class="checklist-workspace-content">
+    <section class="checklist-tab-panel active" data-checklist-panel="checklist">
+      <div class="checklist-workspace-body">
+    <section class="checklist-main-panel">
+      <div class="checklist-kpi-grid">
+        <article><small>Progresso</small><strong id="checklistProgressValue">0%</strong><span id="checklistProgressText">Nenhum item gerado</span></article>
+        <article><small>Pendentes</small><strong id="checklistPendingCount">0</strong><span>tarefas aguardando ação</span></article>
+        <article><small>Em andamento</small><strong id="checklistDoingCount">0</strong><span>tarefas em execução</span></article>
+        <article><small>Concluídas</small><strong id="checklistDoneCount">0</strong><span>tarefas finalizadas</span></article>
+      </div>
+
+      <div class="checklist-progress-line"><span id="checklistProgressBar" style="width:0%"></span></div>
+      <p id="checklistGenerationMode" class="checklist-generation-mode">O checklist utiliza os documentos indexados do edital.</p>
+
+      <div class="checklist-toolbar checklist-workspace-toolbar">
+        <div class="checklist-filter-group">
+          <input id="checklistSearchInput" type="search" placeholder="Buscar tarefa, categoria ou referência">
+          <select id="checklistStatusFilter">
+            <option value="">Todos os status</option>
+            <option value="pendente">Pendentes</option>
+            <option value="em_andamento">Em andamento</option>
+            <option value="concluido">Concluídos</option>
+            <option value="nao_aplicavel">Não aplicáveis</option>
+          </select>
+        </div>
+        <span class="checklist-auto-notice">🔔 Alertas automáticos: administrador, responsável geral e responsável da tarefa</span>
+      </div>
+
+      <div class="checklist-table-head" aria-hidden="true">
+        <span>Tarefa</span><span>Status</span><span>Responsável</span><span>Prazo</span><span>Observações</span><span></span>
+      </div>
+      <div id="checklistList" class="checklist-list checklist-workspace-list">
+        <div class="checklist-empty-state"><span>✓</span><p>Gere o checklist para começar.</p></div>
+      </div>
+    </section>
+
+    <aside class="checklist-side-panel">
+      <section>
+        <small>RESUMO OPERACIONAL</small>
+        <h3>Próximas ações</h3>
+        <div id="checklistUpcomingTasks" class="checklist-upcoming-list"><p class="hint">Nenhuma tarefa com prazo definido.</p></div>
+      </section>
+      <section>
+        <small>INTELIGÊNCIA HÓRUS</small>
+        <h3>Controle de risco</h3>
+        <ul class="checklist-risk-list">
+          <li>Defina responsável e prazo para cada tarefa.</li>
+          <li>Tarefas não concluídas serão notificadas cinco dias antes.</li>
+          <li>A validação final deve ser feita no edital oficial.</li>
+        </ul>
+      </section>
+    </aside>
+
+      </div>
+    </section>
+
+    <section class="checklist-tab-panel" data-checklist-panel="cronograma">
+      <div class="workspace-feature-panel">
+        <header><div><small>PLANEJAMENTO</small><h3>Cronograma da concorrência</h3></div><span id="scheduleSummary">Prazos do checklist</span></header>
+        <div id="checklistSchedule" class="schedule-board"><p class="hint">Defina prazos nas tarefas para montar o cronograma.</p></div>
+      </div>
+    </section>
+
+    <section class="checklist-tab-panel" data-checklist-panel="documentos">
+      <div class="workspace-feature-panel documents-panel">
+        <header><div><small>BASE DOCUMENTAL</small><h3>Documentos da concorrência</h3></div><button id="chooseWorkspaceFiles" class="primary" type="button">+ Selecionar arquivos</button></header>
+        <div id="workspaceDropzone" class="workspace-dropzone" tabindex="0">
+          <strong>Arraste e solte os documentos aqui</strong><span>PDF, DOCX, TXT, MD ou ZIP. Os arquivos serão indexados automaticamente.</span>
+          <input id="workspaceFileInput" type="file" multiple accept=".pdf,.docx,.txt,.md,.zip" hidden>
+        </div>
+        <label class="workspace-document-category">Categoria <select id="workspaceDocumentCategory"><option>Edital</option><option>Jurídico</option><option>Fiscal</option><option>Financeiro</option><option>Técnico</option><option>Comunicação</option><option>Entrega</option></select></label>
+        <div id="workspaceUploadStatus" class="workspace-upload-status"></div>
+        <div id="workspaceDocuments" class="workspace-documents-list"><p class="hint">Carregando documentos...</p></div>
+      </div>
+    </section>
+
+    <section class="checklist-tab-panel" data-checklist-panel="equipe">
+      <div class="workspace-feature-panel">
+        <header><div><small>RESPONSABILIDADES</small><h3>Equipe da concorrência</h3></div></header>
+        <div id="workspaceTeam" class="workspace-team-grid"><p class="hint">Carregando equipe...</p></div>
+      </div>
+    </section>
+
+    <section class="checklist-tab-panel" data-checklist-panel="historico">
+      <div class="workspace-feature-panel">
+        <header><div><small>RASTREABILIDADE</small><h3>Histórico da concorrência</h3></div></header>
+        <div id="workspaceHistory" class="workspace-history"><p class="hint">Carregando histórico...</p></div>
+      </div>
+    </section>
+  </main>
+</section>
